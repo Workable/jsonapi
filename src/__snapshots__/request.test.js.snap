@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`submits a request 1`] = `
+Object {
+  "account": Array [
+    Object {
+      "id": "6969",
+      "name": "My Account",
+      "type": "account",
+    },
+  ],
+  "job": Object {
+    "accountId": "6969",
+    "benefits": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+    "city": "Anchorage",
+    "countryCode": "US",
+    "countryName": "United States",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    "id": "210136031",
+    "industry": "Marketing and Advertising",
+    "keywords": Array [
+      "general management",
+    ],
+    "questionIds": Array [
+      "123",
+      "234",
+    ],
+    "requirements": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <ul><li>Aenean commodo ligula eget dolor?</li></ul>",
+    "stateCode": "AK",
+    "subregion": "Alaska",
+    "title": "Head of Security",
+    "type": "job",
+  },
+  "meta": Object {
+    "ctx": "22563a70-8bd2-4719-9d1b-7c610820e8bc",
+  },
+  "question": Array [
+    Object {
+      "body": "some question",
+      "id": "123",
+      "type": "question",
+    },
+    Object {
+      "body": "some question",
+      "id": "234",
+      "type": "question",
+    },
+  ],
+}
+`;
