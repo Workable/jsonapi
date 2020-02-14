@@ -2,7 +2,7 @@
 
 jsonapi provides the url composition, serialize and deserialize functionality that implements the JSON:API schema.
 
-Read more about (JSON:API schema)[https://jsonapi.org/]
+Read more about [JSON:API schema](https://jsonapi.org/)
 
 ## installing
 
