@@ -1,7 +1,7 @@
 import { underscoredKeys, snakeCase } from "@workablehr/object-transformator";
 
 /**
- * @description A helper for generating search queries according to JSON:API schema
+ * @description A helper for generating JSON:API schema applicable objects.
  * @example
  * serialize('job', jobAttrs)
  *   .include('account', accountId)

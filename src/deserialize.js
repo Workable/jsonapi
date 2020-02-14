@@ -1,5 +1,31 @@
 import { camelizeKeys, camelCase } from "@workablehr/object-transformator";
 
+acorn({
+  type1: [{ id: 1, attr1: "value1", type: "type1", type2Id: 2 }],
+  type2: { id: 2, attr2: "value2", type: "type2" }
+});
+
+/**
+ * @description A helper for deserializing JSON:API schema objects.
+ * @example
+ * deserialize({
+ *   data: [
+ *     {
+ *       id: 1,
+ *       type: "type1",
+ *       attributes: { attr1: "value1" },
+ *       relationships: { type2: { data: { id: 2, type: "type2" } } }
+ *     }
+ *   ],
+ *   included: [{ type: "type2", id: 2, attributes: { attr2: "value2" } }]
+ * });
+ *
+ * {
+ *   type1: [{ id: 1, attr1: "value1", type: "type1", type2Id: 2 }],
+ *   type2: { id: 2, attr2: "value2", type: "type2" }
+ * }
+ */
+
 const defaultType = "data";
 
 const camelize = data => ({
