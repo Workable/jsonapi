@@ -15,6 +15,8 @@ $ npm install @workablehr/jsonapi
 ## Basic usage
 
 ```javascript
+import {serialize} from '@workablehr/jsonapi';
+
 const payload = serialize("sourceName", {
   attr1: "value1",
   attr2: "value2"
@@ -35,6 +37,8 @@ request(url, { body: payload })
 A helper for generating JSON:API schema objects.
 
 ```javascript
+import {serialize} from '@workablehr/jsonapi';
+
 serialize("job", jobAttrs)
   .include("account", accountId)
   .meta(metaAttrs)
@@ -46,6 +50,8 @@ serialize("job", jobAttrs)
 A helper for deserializing JSON:API schema objects.
 
 ```javascript
+import {deserialize} from '@workablehr/jsonapi';
+
 deserialize({
   data: [
     {
@@ -69,6 +75,8 @@ deserialize({
 A helper for generating search queries according to JSON:API schema
 
 ```javascript
+import {makeUrl} from '@workablehr/jsonapi';
+
 makeUrl("resource.com")
   .include(["account"])
   .filter("staffing", true)
