@@ -1,6 +1,7 @@
-import request from "./request";
-import deserialize from "./deserialize";
-import serialize from "./serialize";
-import makeUrl from "./makeUrl";
+import withJsonapi from "./withJsonapi";
 
-export { request, deserialize, serialize, makeUrl };
+export { default as deserialize } from "./deserialize";
+export { default as serialize } from "./serialize";
+export { default as makeUrl } from "./makeUrl";
+
+export default withJsonapi;

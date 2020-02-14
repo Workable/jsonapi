@@ -6,7 +6,6 @@ module.exports = {
     "./node_modules",
     "<rootDir>/jest"
   ],
-  setupFiles: ["<rootDir>/jest/setup.js"],
   setupFilesAfterEnv: ["<rootDir>/jest/setupForEach.js"],
   transformIgnorePatterns: ["node_modules"],
   verbose: true,
