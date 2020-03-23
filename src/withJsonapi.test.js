@@ -29,3 +29,15 @@ it("returns a non jsonapi error", async () => {
   }
   expect(error).toBe("error");
 });
+
+it("Does not parse id response shape is invalid", async () => {
+  const notJsonapiResonse = { notJsonapi: true };
+  const request = withJsonapi(() => Promise.reject(notJsonapiResonse));
+  let error;
+  try {
+    await request("mockUrl");
+  } catch (e) {
+    error = e;
+  }
+  expect(error).toBe(notJsonapiResonse);
+});
