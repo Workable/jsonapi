@@ -3,7 +3,7 @@
   "description": "JSON:API client",
   "license": "MIT",
   "repository": "github:workable/jsonapi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "keywords": [
