@@ -72,10 +72,18 @@ export default url => {
         .set(num);
       return parameterize;
     },
+    cursor: value => {
+      param("after").set(value);
+      return parameterize;
+    },
     limit: num => {
       param("size")
         .on("page")
         .set(num);
+      return parameterize;
+    },
+    size: num => {
+      param("size").set(num);
       return parameterize;
     },
     sort: attrs => {
@@ -89,7 +97,7 @@ export default url => {
       return parameterize;
     },
     search: value => {
-      param("search").set(value);
+      param("q").set(value);
       return parameterize;
     },
     param: (attr, value) => {
