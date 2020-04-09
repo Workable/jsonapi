@@ -16,7 +16,7 @@ it("returns a jsonapi error", async () => {
   } catch (e) {
     error = e;
   }
-  expect(error).toEqual({ title: "can't be blank" });
+  expect(error.serialized).toEqual({ title: "can't be blank" });
 });
 
 it("returns a non jsonapi error", async () => {
@@ -27,7 +27,7 @@ it("returns a non jsonapi error", async () => {
   } catch (e) {
     error = e;
   }
-  expect(error).toBe("error");
+  expect(error.response).toBe("error");
 });
 
 it("Does not parse id response shape is invalid", async () => {
